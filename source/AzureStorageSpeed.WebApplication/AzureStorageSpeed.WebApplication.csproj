@@ -177,11 +177,13 @@
     <Compile Include="App_Packages\LibLog.4.2\LibLog.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AppendBlobsController.cs" />
     <Compile Include="Controllers\TablesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\AppendBlobs\IndexViewModel.cs" />
     <Compile Include="ViewModels\Tables\IndexViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -210,7 +212,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Service References\Application Insights\ConnectedService.json" />
     <Content Include="Views\Tables\Index.cshtml" />
-    <None Include="Properties\PublishProfiles\azurestoragespeed - Web Deploy.pubxml" />
+    <Content Include="Views\AppendBlobs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -227,6 +229,9 @@
       <Project>{6443504b-f60f-4280-97ee-4f2e454d6803}</Project>
       <Name>AzureStorageSpeed.Library</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\azurestoragespeed - Web Deploy.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

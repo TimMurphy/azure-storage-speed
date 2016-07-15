@@ -115,8 +115,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Packages\LibLog.4.2\LibLog.cs" />
+    <Compile Include="Features\Library\AppendBlob speed test.feature.cs">
+      <DependentUpon>AppendBlob speed test.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Features\Library\AppendBlobSpeedTest.steps.cs">
+      <DependentUpon>AppendBlob speed test.feature</DependentUpon>
+    </Compile>
     <Compile Include="Features\Library\TableSpeedTest.steps.cs">
       <DependentUpon>Table speed test.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\WebApplication\AppendBlob speed test.feature.cs">
+      <DependentUpon>AppendBlob speed test.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Features\WebApplication\AppendBlobSpeedTest.steps.cs">
+      <DependentUpon>AppendBlob speed test.feature</DependentUpon>
     </Compile>
     <Compile Include="Features\WebApplication\TableSpeedTest.steps.cs">
       <DependentUpon>Table speed test.feature</DependentUpon>
@@ -149,9 +165,17 @@
     <None Include="AppSettings.Example.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Features\Library\AppendBlob speed test.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AppendBlob speed test.feature.cs</LastGenOutput>
+    </None>
     <None Include="Features\Library\Table speed test.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Table speed test.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\WebApplication\AppendBlob speed test.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AppendBlob speed test.feature.cs</LastGenOutput>
     </None>
     <None Include="Features\WebApplication\Table speed test.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>

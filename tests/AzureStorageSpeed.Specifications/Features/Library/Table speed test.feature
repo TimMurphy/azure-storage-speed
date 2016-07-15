@@ -2,7 +2,7 @@
 
 Scenario: Happy path
 	Given connectionString is secret
-	And tableName is speedtest
+	And tableName is speedtests
 	And stringLength is 100
 	And rows 10
 	When I call TableSpeedTest.RunAsync(connectionString, tableName, stringLength, rows)
