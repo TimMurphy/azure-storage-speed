@@ -1,0 +1,23 @@
+﻿@model AzureStorageSpeed.WebApplication.ViewModels.Tables.IndexViewModel
+<h1>Write strings to Azure Table speed test</h1>
+
+<div>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        @Html.EditorForModel()
+        <input type="submit" id="RunSpeedTests" value="Run Speed Tests"/>
+    }
+</div>
+
+@if (Model.Results.Any())
+{
+    <div id="results">
+        <ul>
+            @foreach (var result in Model.Results)
+            {
+                <li>@result.Message @result.Elapsed.TotalMilliseconds.ToString("N0")ms</li>
+            }
+        </ul>
+    </div>
+}

@@ -8,7 +8,9 @@ packages/
 *.csproj.user
 *.DotSettings.user
 *.feature.cs
+*.pubxml.user
 *.tmp
 
 AppSettings.config
 npm-debug.log
+
